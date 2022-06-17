@@ -3,29 +3,8 @@ import { CircularProgress, Grid, Typography, InputLabel, MenuItem, Select } from
 import { CustomSelectEmpty, CustomList, CustomFormControl, Container, MarginBottom, loader } from "./styles"
 import PlaceDetails from "../PlaceDetails/PlaceDetails";
 
-const places = [
-    { name: "Best Places"},
-    { name: "Best Bears"},
-    { name: "Best Restaurants"},
-    { name: "Best Places"},
-    { name: "Best Bears"},
-    { name: "Best Restaurants"},
-    { name: "Best Places"},
-    { name: "Best Bears"},
-    { name: "Best Restaurants"},
-    { name: "Best Places"},
-    { name: "Best Bears"},
-    { name: "Best Restaurants"},
-    { name: "Best Places"},
-    { name: "Best Bears"},
-    { name: "Best Restaurants"},
-    { name: "Best Places"},
-    { name: "Best Bears"},
-    { name: "Best Restaurants"},
 
-]
-
-const List = () => {
+const List = ({places}) => {
     const [ type, setType] = useState("restaurants")
     const [ rating, setRating] = useState("")
     return(

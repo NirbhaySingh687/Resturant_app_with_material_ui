@@ -10,8 +10,8 @@ function App() {
   return (
       <Router>
           <Routes>
-              <Route path="/" exact element={<Resturant />}/>
-              <Route path="/explore" exact element={<MaterialUi />}/>
+              <Route path="/explore" exact element={<Resturant />}/>
+              <Route path="/" exact element={<MaterialUi />}/>
               <Route path="*" exact element={<h1>404 Not Found</h1>}/>
           </Routes>
       </Router>
